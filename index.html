@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <section class="seccion-date">
+        <div class="container">
+            <div class="container-arriba">
+                <div class="div-day fechas">
+                    <label for="dia">DAY</label>
+                    <input type="number" class="input-day numero-validar" id="dia">
+                    <span class="error-fecha error-dia">Must be a valid day</span>
+                </div>
+                <div class="div-month fechas">
+                    <label for="month">MONTH</label>
+                    <input type="number" class="input-month numero-validar" id="month">
+                    <span class="error-fecha error-mes">Must be a valid month</span>
+                </div>
+                <div class="div-year fechas">
+                    <label for="year">YEAR</label>
+                    <input type="number" class="input-year numero-validar" id="year">
+                    <span class="error-fecha error-anio">Must be in the past</span>
+                </div>
+            </div>
+            <div class="container-centro">
+                <div class="centro-linea"></div>
+                <div class="centro-img">
+                    <img class="img" src="./images/icon-arrow.svg" alt="">
+                </div>
+            </div>
+            <div class="container-abajo">
+                <div class="resp-anio"><span class="span-year">--</span> Years</div>
+                <div class="resp-mes"><span class="span-month">--</span> Months</div>
+                <div class="resp-dia"><span class="span-day">--</span> Days</div>
+            </div>
+        </div>
+
+    </section>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

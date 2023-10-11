@@ -1,0 +1,151 @@
+@font-face {
+  font-family: "resultado";
+  /* src: url(../fonts/Poppins-Bold.ttf); */
+  /* src: url(../fonts/Poppins-BoldItalic.ttf); */
+  /* src: url(../fonts/Poppins-ExtraBold.ttf); */
+  src: url(../fonts/Poppins-ExtraBoldItalic.ttf);
+  /* src: url(../fonts/Poppins-Italic.ttf); */
+  /* src: url(../fonts/Poppins-Regular.ttf); */
+  font-weight: bold;
+  font-size: bold;
+}
+@font-face {
+  font-family: "font-error";
+  /* src: url(../fonts/Poppins-Bold.ttf); */
+  /* src: url(../fonts/Poppins-BoldItalic.ttf); */
+  /* src: url(../fonts/Poppins-ExtraBold.ttf); */
+  /* src: url(../fonts/Poppins-ExtraBoldItalic.ttf); */
+  src: url(../fonts/Poppins-Italic.ttf);
+  /* src: url(../fonts/Poppins-Regular.ttf); */
+  font-weight: normal !important;
+  font-size: normal;
+}
+@font-face {
+  font-family: "font-dias";
+  src: url(../fonts/Poppins-Bold.ttf);
+  /* src: url(../fonts/Poppins-BoldItalic.ttf); */
+  /* src: url(../fonts/Poppins-ExtraBold.ttf); */
+  /* src: url(../fonts/Poppins-ExtraBoldItalic.ttf); */
+  /* src: url(../fonts/Poppins-Italic.ttf); */
+  /* src: url(../fonts/Poppins-Regular.ttf); */
+  font-weight: bold;
+  font-size: bold;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aqua;
+  display: grid;
+  width: 100%;
+  height: 800px;
+}
+
+.seccion-date {
+  justify-self: center;
+  align-self: center;
+  width: 450px;
+  height: 450px;
+  background-color: aliceblue;
+  border-radius: 25px 25px 110px 25px;
+  display: grid;
+}
+.seccion-date .container {
+  width: 80%;
+  height: 80%;
+  /* background-color: aqua; */
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  grid-template-rows: 20% 20% 60%;
+  position: relative;
+}
+.seccion-date .container .container-arriba {
+  display: flex;
+  /* background-color: orange; */
+  justify-content: space-around;
+}
+.seccion-date .container .container-arriba .fechas {
+  display: flex;
+  flex-direction: column;
+  columns: 1fr 1fr 1fr;
+  font-family: "font-dias";
+}
+.seccion-date .container .container-arriba .fechas label {
+  color: gray;
+  font-size: 14px;
+}
+.seccion-date .container .container-arriba .fechas .error-fecha {
+  font-family: "font-error";
+  font-size: 10px;
+  color: red;
+  font-weight: lighter;
+  opacity: 0;
+  /* opacity: 0; */
+}
+.seccion-date .container .container-arriba .fechas .error-fecha-mostrar {
+  opacity: 1 !important;
+}
+.seccion-date .container .container-arriba .fechas input {
+  width: 80px;
+  height: 40px;
+  margin-left: 5px;
+  border-radius: 5px;
+  font-family: "font-dias";
+  font-size: 22px;
+  padding: 0px 10px;
+  border: 1px solid rgba(128, 128, 128, 0.524);
+  text-align: center;
+}
+.seccion-date .container .container-arriba .fechas input::-webkit-outer-spin-button, .seccion-date .container .container-arriba .fechas input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  /* margin: 0; */
+}
+.seccion-date .container .container-arriba .fechas .error-input-mostrar {
+  border: 1px solid rgb(255, 0, 0);
+}
+.seccion-date .container .container-centro {
+  /* background-color: gray; */
+  align-self: center;
+  display: grid;
+  height: 100%;
+  grid-template-columns: 80% 20%;
+}
+.seccion-date .container .container-centro .centro-linea {
+  background-color: rgba(155, 155, 155, 0.31);
+  width: 85%;
+  height: 2px;
+  align-self: center;
+  justify-self: center;
+  border-radius: 50%;
+}
+.seccion-date .container .container-centro .centro-img {
+  justify-self: end;
+  align-self: center;
+}
+.seccion-date .container .container-centro .centro-img .img {
+  background-color: black;
+  border-radius: 50%;
+  padding: 10px;
+  width: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.411), 3px 3px 15px rgba(0, 0, 0, 0.444), 3px 3px 25px rgba(0, 0, 0, 0.237);
+}
+.seccion-date .container .container-centro .centro-img .img:hover {
+  background-color: rgb(135, 72, 225);
+}
+.seccion-date .container .container-abajo {
+  /* background-color: green; */
+  font-size: 55px;
+  font-weight: bold;
+  font-family: "resultado";
+}
+.seccion-date .container .container-abajo span {
+  color: rgb(135, 72, 225);
+}
+
+/*# sourceMappingURL=style.css.map */
